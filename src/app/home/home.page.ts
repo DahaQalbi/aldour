@@ -20,7 +20,6 @@ import {
   IonItem,
   IonIcon,
 } from '@ionic/angular/standalone';
-import { ApicallService } from '../apicall.service';
 import { ToastService } from '../toast.service';
 
 @Component({
