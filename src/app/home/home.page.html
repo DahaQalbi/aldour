@@ -1,0 +1,88 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <ion-list class="w-full bg-purple main">
+      <ion-list class="logo float-left mt-10  h-8 w-11 bg-transparent">
+        <img src="../../assets/image/WhatsApp Image 2024-08-10 at 7.32.57 PM.jpeg" alt="">
+      </ion-list>
+      <ion-list class="aldour-heading bg-transparent fw-bold color-white">
+        <ion-label>Connecting You With <span>Premier</span> Real Estate Opportunities</ion-label>
+      </ion-list>
+      <br>
+      <br>
+      <ion-button color="secondary" class="button-pdf mt-4" expand="block">Let’s get started</ion-button>
+    </ion-list>
+    <ion-grid>
+      <ion-row>
+        <ion-col class="m-auto bg-transparent col-padding" size-md="6" size-sm="10" size-lg="5">
+          <ion-list class="mt-3">
+            <ion-label>Company Name</ion-label>
+            <input formControlName="companyName" class="aldour-input mt-1">
+          </ion-list>
+          <ion-list class="mt-3">
+            <ion-label>Project Name</ion-label>
+            <input formControlName="projectName" class="aldour-input mt-1">
+          </ion-list>
+          <ion-list class="mt-3">
+            <ion-label>City</ion-label>
+            <input formControlName="city" class="aldour-input mt-1">
+          </ion-list>
+          <ion-list class="mt-3">
+            <ion-label>Email</ion-label>
+            <input formControlName="email" class="aldour-input mt-1">
+          </ion-list>
+          <ion-list class="mt-3">
+            <ion-label>Official Contact No.</ion-label>
+            <ion-row>
+              <ion-col size="2">
+                <ion-list class="aldour-input center mt-1">
+                  +92
+                </ion-list>
+              </ion-col>
+              <ion-col size="10">
+                <input formControlName="officialContact" type="number" class="aldour-input mt-1">
+              </ion-col>
+            </ion-row>
+          </ion-list>
+          <ion-list class="mt-3">
+            <ion-label>Type Of Property</ion-label>
+            <select formControlName="propertyTypes" class="aldour-input mt-1">
+              <option value="Residential Housing Society">Residential Housing Society</option>
+              <option value="Apartment Buildings">Apartment Buildings</option>
+              <option value="Office Spaces">Office Spaces</option>
+              <option value="Villas">Villas</option>
+              <option value="Town Houses">Town Houses</option>
+              <option value="Shopping Malls">Shopping Malls</option>
+              <option value="Other">Other</option>
+            </select>
+          </ion-list>
+          <ion-list class="mt-3">
+            <ion-label>Mobile No</ion-label>
+            <ion-row>
+              <ion-col size="2">
+                <ion-list class="aldour-input center mt-1">
+                  +92
+                </ion-list>
+              </ion-col>
+              <ion-col size="10">
+                <input formControlName="mobileNo" type="number" class="aldour-input mt-1">
+              </ion-col>
+            </ion-row>
+          </ion-list>
+          <ion-list class="mt-3">
+            <ion-label>Office Address</ion-label>
+            <input formControlName="officeAdress" class="aldour-input mt-1">
+          </ion-list>
+          <ion-button (click)="onSubmit()" class="color-white mt-5 m-auto" expand="block">
+            Submit Data
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+  <footer>
+    <a href="https://github.com/DahaQalbi/aldour">
+      <h3 style="text-align: center; color: white;"> Download Source Code</h3>
+    </a>
+
+  </footer>
+</ion-content>

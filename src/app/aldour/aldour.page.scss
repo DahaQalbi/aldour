@@ -1,0 +1,47 @@
+.ion-padding {
+    --padding-start: var(--ion-padding, 6px);
+    --padding-end: var(--ion-padding, 8px);
+    --padding-top: var(--ion-padding, 7px);
+}
+span{
+    color: rgb(234, 190, 79);
+}
+
+.sc-ion-input-md-h {
+    --highlight-color-focused: none !important;
+    --highlight-color-valid:none !important;
+    --highlight-color-invalid:none !important;
+    --highlight-color: none !important;
+}
+  @media (min-width: 1200px) { 
+    .aldour-heading {
+      font-size: 40px;
+      width: 600px;
+      margin-top: 50px;
+      margin-left: 100px;
+    }
+    .main{
+        height: 470px;
+    }
+    .logo{
+        margin-left: 140px;
+    }
+    ion-button{
+        margin-left: 100px;
+        bottom: 40px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .aldour-heading {
+      font-size: 22px;
+      width: 300px;
+      margin-top: 14px;
+    }
+    .main{
+        height: 300px;
+    }
+    .logo{
+        margin-left: 36px;
+    }
+}

@@ -1,0 +1,536 @@
+// For information on how to create your own theme, please see:
+// http://ionicframework.com/docs/theming/
+
+@for $i from 1 through 20 {
+    $basePx: 4px * $i;
+
+    .fs-#{$i} {
+        font-size: $basePx !important;
+    }
+
+    .p-#{$i} {
+        padding: $basePx !important;
+    }
+
+    .pt-#{$i} {
+        padding-top: $basePx !important;
+    }
+
+    .pb-#{$i} {
+        padding-bottom: $basePx !important;
+    }
+
+    .py-#{$i} {
+        padding-top: $basePx !important;
+        padding-bottom: $basePx !important;
+    }
+
+    .px-#{$i} {
+        padding-left: $basePx !important;
+        padding-right: $basePx !important;
+    }
+
+    .pr-#{$i} {
+        padding-right: $basePx !important;
+    }
+
+    .pl-#{$i} {
+        padding-left: $basePx !important;
+    }
+
+    .m-#{$i} {
+        margin: $basePx !important;
+    }
+
+    .mt-#{$i} {
+        margin-top: $basePx !important;
+    }
+
+    .mb-#{$i} {
+        margin-bottom: $basePx !important;
+    }
+
+    .mr-#{$i} {
+        margin-right: $basePx !important;
+    }
+
+    .ml-#{$i} {
+        margin-left: $basePx !important;
+    }
+
+    .my-#{$i} {
+        margin-top: $basePx !important;
+        margin-bottom: $basePx !important;
+    }
+
+    .mx-#{$i} {
+        margin-left: $basePx !important;
+        margin-right: $basePx !important;
+    }
+
+    .gap-#{$i} {
+        gap: $basePx !important;
+    }
+
+    .fs-#{$i} {
+        font-size: $basePx !important;
+    }
+
+    .lh-#{$i} {
+        line-height: $basePx !important;
+    }
+
+
+
+}
+
+// generate border classes
+@for $i from 1 through 100 {
+    $basePx: 1px * $i;
+
+    .border-#{$i} {
+        border: $basePx solid var(--ion-border-color) !important;
+    }
+
+    .border-black-#{$i} {
+        border: $basePx solid black !important;
+    }
+
+    .border-top-#{$i} {
+        border-top: $basePx solid #C8C8C8 !important;
+    }
+
+    .border-white-#{$i} {
+        border: $basePx solid white !important;
+    }
+  
+
+   
+}
+
+// border-none classes
+.outline-none{
+    outline:none !important
+}
+.w-eight{
+    width: 8% !important;
+}
+
+.pt-0 {
+    padding-top: 0 !important;
+}
+
+.pl-0 {
+    padding-left: 0 !important;
+}
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+// icon-color
+ion-icon {
+    color: var(--icon-color);
+  }
+  
+// generate height and width classes 
+@for $i from 1 through 100 {
+    $basePx: 10px * $i;
+
+    .w-#{$i} {
+        width: $basePx !important;
+    }
+
+    .h-#{$i} {
+        height: $basePx !important;
+    }
+
+
+}
+
+// generate line-height 
+
+
+@for $i from 1 through 10 {
+    $basePx: 4px * $i;
+
+    .line-height-#{$i} {
+        line-height: $basePx !important;
+    }
+}
+
+// generate font-weight classes 
+@for $i from 1 through 10 {
+    $basePx: 100 * $i;
+
+    .fw-#{$i} {
+        font-weight: $basePx !important;
+    }
+    
+
+}
+
+// generate height and width classes in % 
+@for $i from 1 through 4 {
+
+    $name: 25 * $i;
+    $value: 25% * $i;
+
+
+    .h-#{$name} {
+        height: $value !important;
+    }
+
+    .w-#{$name} {
+        width: $value !important;
+    }
+
+
+}
+// other utility classes
+
+.center {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+.h-90 {
+    height: 90% !important;
+}
+
+
+.position-absolute {
+    position: absolute !important;
+}
+.bg-purple{
+    background-color: #280c5e !important;
+}
+
+.bg-transparent {
+    background: transparent !important;
+}
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+.justify-content-around {
+    justify-content: space-around !important;
+}
+
+.justify-content-start {
+    justify-content: start !important;
+}
+
+.justify-content-end {
+    justify-content: end !important;
+}
+
+.float-end {
+    float: inline-end !important;
+}
+
+
+.m-auto {
+    margin: auto !important
+}
+
+.m-none {
+    margin: 0 !important;
+}
+
+.me {
+    margin-left: auto !important;
+}
+
+.mr {
+    margin-right: auto;
+}
+
+.my {
+    margin-left: auto;
+}
+.link-hover:hover {
+    border-bottom: 1px solid --primary;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.bg-none {
+    background: none !important;
+}
+.border-none {
+    border: none !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.align-items-start {
+    align-items: start !important;
+}
+
+.align-items-end {
+    align-items: end !important;
+}
+.fw-bold {
+    font-weight: bold !important;
+}
+.border-none {
+    border: none !important;
+}
+
+.position-relative {
+    position: relative !important;
+}
+.top {
+    top: 0px !important;
+}
+
+.bottom {
+    bottom: 0px !important;
+}
+.left-0{
+    left: 0% !important;
+}
+.left {
+    left: 0px !important;
+}
+
+.right {
+    right: 0px !important;
+}
+
+.position-absolute {
+    position: absolute !important;
+}
+
+.bg-transparent {
+    background: transparent !important;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.h-50 {
+    height: 50% !important;
+}
+.title-font {
+    font-size: 2.6rem !important;
+    font-weight: bold !important;
+    line-height: 75px !important;
+}
+
+.sub-title-font {
+    font-weight: 300 !important;
+    font-size: 22px !important;
+    line-height: 28.13px !important;
+}
+.float-right {
+    float: right !important;
+}
+
+.float-left {
+    float: left !important;
+}
+.border-radius-10{
+    border-radius: 10px !important;
+}
+
+.border-radius-100{
+    border-radius: 100px !important;
+}
+.border-radius-0{
+    border-radius: 0 !important;
+}
+
+.rounded{
+    border-radius: 50% !important;
+}
+.bgthem-gray{
+ background-color: var(--ion-color-light-tint);
+}
+.color-white{
+    color: white !important;
+}
+.border-theme {
+    border: var(--custom-border-color) solid 1px;
+  }
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: x-large;
+    font-weight: bold;
+  }
+  .form-inner form .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .form-inner form .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 15px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: 17px;
+  }
+  .input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 7px;
+    margin-top: 10px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: 17px;
+  }
+
+.main-bg{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100%;
+  }
+  
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+  
+    50% {
+        background-position: 100% 50%;
+    }
+  
+    100% {
+        background-position: 0% 50%;
+    }
+  } 
+
+// fixed css alter class 
+
+.app-card {
+    padding: 12px !important;
+    border-radius: 24px;
+
+    h1 {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 18.75px;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 8px;
+    }
+}
+.form-control {
+    height: 54px !important;
+}
+.w-full{
+    width: 100% !important;
+}
+.h-full{
+    height: 100% !important;
+}
+.flex-1{
+    flex: 1;
+}
+
+.flex-2{
+    flex: 2;
+}
+.profile-card {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+.button-design {
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow,transform;
+    background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+    box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+    border-radius: 0.3em;
+    color: #fff;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+  }
+  .overflow-y{
+    overflow-y: auto !important;
+  }
+  .button-design:hover {
+    box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+    transform: translateY(-0.1em);
+  }
+  
+  .button-design:active {
+    box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+    transform: translateY(0em);
+  }
+
+  .position-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 256px;
+    border-radius: 20px;
+    padding-top: 10px;
+  }
+  .aldour-heading{
+    position: absolute;
+    left: 36px;
+    top: 130px;
+    font-size: 2rcap;
+  }
+
+  .button-pdf{
+    position: absolute;
+    bottom:35px;
+    left: 36px;
+  }
+  .aldour-input {
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .aldour-input:focus {
+    outline: none;
+    border-color: #aaa;
+  }
+  option{
+    background-color: #aaa !important;
+  }

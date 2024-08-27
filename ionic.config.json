@@ -1,0 +1,8 @@
+{
+  "name": "aldour",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone",
+  "style":"./src/theme/variables.scss"
+}
