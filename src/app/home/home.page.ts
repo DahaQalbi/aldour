@@ -53,7 +53,7 @@ export class HomePage {
 
     private toast: ToastService
   ) {}
-  public apicall: ApicallService = inject(ApicallService);
+
   ngOnInit() {
     this.myForm = this.fb.group({
       companyName: ['', Validators.required],
@@ -68,13 +68,5 @@ export class HomePage {
   }
   onSubmit() {
     console.log(this.myForm);
-    this.apicall.signup(this.myForm.value).subscribe((res) => {
-      if (res.status === 200) {
-        this.toast.showSuccess('Data Inserted');
-        this.myForm.reset();
-      } else {
-        this.toast.showError('Something Went Wrong');
-      }
-    });
   }
 }
